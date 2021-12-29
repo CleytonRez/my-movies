@@ -23,7 +23,7 @@ const NovoFilme = () => {
 
 
     return (
-        <div>
+        <div className="container">
             <label htmlFor="name">Nome</label>
             <input type='text' className='form-control' onChange={getChange} id='name' placeholder='Nome do Filme' />
 
