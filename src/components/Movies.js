@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 
 
 const Movies = () => {
@@ -33,14 +33,16 @@ const Movies = () => {
                 <td>
                     <button className='btn btn-danger' onClick={() => deleteMovie(informacoes.id)}>X</button>
                 </td>
-            </tr>
+            </tr >
         )
     }
     return (
         <div className="container">
 
             <h1>My Movies</h1>
-            <button className="btn btn-confirm">Adicionar Filme</button>
+            <br />
+            <div><Link to='/movies/novo' className="btn btn-primary">Adicionar Filme</Link></div>
+            <br />
             <table className="table table-sm table-dark">
                 <thead>
                     <tr>
